@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: #292E3A;
+    overflow-x: hidden;
+}
+
+h2{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    padding: 30px;
+    width: 500px;
+    background: #e74c3c;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-left: 20px solid #ffbb4f;
+    font-weight: 200;
+}
+p{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.timediv{
+    font-family: 'Comfortaa', cursive;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.timediv .time{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    line-height: 90px;
+    font-size: 45px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.timediv .time:nth-child(1){background-color:#e74c3c ;}
+.timediv .time:nth-child(2){background-color:#2ecc71 ;}
+.timediv .time:nth-child(3){
+    background-color: #f39c12;
+    margin-right:0 ;
+}
+
+.datediv{
+    width: 400px;
+    font-family: 'Prompt', sans-serif;
+    background: #3A414E;
+    color: #6D7481;
+    margin: auto;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* responsive css */
+
+@media (max-width:520px) {
+    h2{
+        width: 368px;
+    }
+}
+@media (max-width:405px) {
+    .datediv{
+        width: 300px;
+    }
+    .timediv{
+        width: 300px;
+    }
+    .timediv .time {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 25px;
+        margin-right: 5px;
+    }
+    h2 {
+        width: 208px;
+    }
+}
+@media (max-width:333px) {
+    .datediv{
+        flex-direction: column;
+        width: 200px;
+        font-size: 16px;
+    }
+    .timediv{
+        width: 200px;
+    }
+}
