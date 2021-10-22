@@ -100,6 +100,9 @@ p{
     h2 {
         width: 208px;
     }
+    p{
+    margin-top: 50px;
+}
 }
 @media (max-width:333px) {
     .datediv{
